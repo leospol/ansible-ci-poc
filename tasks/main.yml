@@ -1,0 +1,12 @@
+- name: Install nginx
+  yum:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - nginx
+
+- name: Place index
+  copy:
+    src: files/index.html
+    dest: /var/www/html/index.html
+  notify: start and enable nginx
