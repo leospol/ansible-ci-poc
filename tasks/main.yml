@@ -6,7 +6,7 @@
     - nginx
 
 - shell: cat /etc/nginx/sites-enabled/default
-- shell: find /var/www/
+- shell: find /usr/share/nginx/
 
 - name: Place index
   copy:
