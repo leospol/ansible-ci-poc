@@ -4,6 +4,5 @@
   roles:
     - ansible-ci-poc
   post_tasks:
-  - get_url: url=http://localhost dest=/tmp/index.html
-  - command: grep "This is index.html" /tmp/index.html 
+  - shell: curl http://localhost | grep "This is index.html"
 

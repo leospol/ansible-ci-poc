@@ -5,14 +5,8 @@
   with_items:
     - nginx
 
-- name: Create doc root
-  file:
-    path: /var/www/html
-    state: directory
-    mode: 0755
-
 - name: Place index
   copy:
     src: files/index.html
-    dest: /var/www/html/index.html
+    dest: /usr/share/nginx/html/index.html
   notify: start and enable nginx
