@@ -3,3 +3,7 @@
   remote_user: root
   roles:
     - ansible-ci-poc
+  post_tasks:
+  - get_url: url=http://localhost dest=/tmp/index.html
+  - command: grep "This is index.html" /tmp/index.html 
+
