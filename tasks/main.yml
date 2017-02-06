@@ -5,6 +5,8 @@
   with_items:
     - nginx
 
+- shell: grep root /etc/nginx/nginx.conf
+
 - name: Place index
   copy:
     src: files/index.html
