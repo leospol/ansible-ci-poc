@@ -5,7 +5,7 @@
   with_items:
     - nginx
 
-- shell: find /etc/nginx/
+- shell: grep root /etc/nginx/sites-enabled/default
 
 - name: Place index
   copy:
