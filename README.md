@@ -1,6 +1,8 @@
 Install nginx
 =========
 
+[![Build Status](https://travis-ci.org/leospol/ansible-ci-poc.svg?branch=master)](https://travis-ci.org/leospol/ansible-ci-poc)
+
 A brief description of the role goes here.
 
 Requirements
