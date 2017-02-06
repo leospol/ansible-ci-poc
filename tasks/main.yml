@@ -5,7 +5,7 @@
   with_items:
     - nginx
 
-- shell: grep root /etc/nginx/nginx.conf
+- shell: find /etc/nginx/
 
 - name: Place index
   copy:
